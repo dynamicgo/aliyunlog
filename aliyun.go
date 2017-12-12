@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	sls "github.com/aliyun/go-loghub"
+	sls "github.com/aliyun/aliyun-log-go-sdk"
 	"github.com/dynamicgo/config"
 	"github.com/dynamicgo/slf4go"
 	"github.com/gogo/protobuf/proto"

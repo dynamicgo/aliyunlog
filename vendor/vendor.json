@@ -6,8 +6,14 @@
 			"checksumSHA1": "8G3MdcWpgaVSwl1Yh/n6yJo3w5o=",
 			"origin": "github.com/dynamicgo/config/vendor/github.com/Jeffail/gabs",
 			"path": "github.com/Jeffail/gabs",
-			"revision": "b6d57c11b1ac88702e1f06eaf73f3601567ae899",
-			"revisionTime": "2017-11-10T12:27:16Z"
+			"revision": "aa9e325b771ca815461890c5e5b9be4e42da1633",
+			"revisionTime": "2017-11-26T15:05:34Z"
+		},
+		{
+			"checksumSHA1": "PF/IhtoBfLFTPaKnZZ77VT5mReo=",
+			"path": "github.com/aliyun/aliyun-log-go-sdk",
+			"revision": "9bbd4fe1fe0ba1e0a5362cec7a0323dcaf90e25f",
+			"revisionTime": "2017-12-08T02:57:38Z"
 		},
 		{
 			"checksumSHA1": "fJl61EA6M1x8NG1lRgNyxegdQls=",
@@ -16,11 +22,10 @@
 			"revisionTime": "2017-05-27T01:41:15Z"
 		},
 		{
-			"checksumSHA1": "8dMf/LWTKUevSFeTpcs/Bq6ePcs=",
+			"checksumSHA1": "pQdQAyva/nOnQXh4sQLui5rvsbQ=",
 			"path": "github.com/cloudflare/golz4",
 			"revision": "ef862a3cdc58a6f1fee4e3af3d44fbe279194cde",
-			"revisionTime": "2015-02-17T21:48:14Z",
-			"tree": true
+			"revisionTime": "2015-02-17T21:48:14Z"
 		},
 		{
 			"checksumSHA1": "OFu4xJEIjiI8Suu+j/gabfp+y6Q=",
@@ -30,10 +35,10 @@
 			"revisionTime": "2017-07-05T02:17:15Z"
 		},
 		{
-			"checksumSHA1": "E+FzCdR1luyoxc9XZ++leVgVbS8=",
+			"checksumSHA1": "FbcM2THHHwG+T4WbruyMPUdB1X8=",
 			"path": "github.com/dynamicgo/config",
-			"revision": "b6d57c11b1ac88702e1f06eaf73f3601567ae899",
-			"revisionTime": "2017-11-10T12:27:16Z"
+			"revision": "aa9e325b771ca815461890c5e5b9be4e42da1633",
+			"revisionTime": "2017-11-26T15:05:34Z"
 		},
 		{
 			"checksumSHA1": "XmnYB5Ngjy4J0W+GpnpeKfYSGjs=",
@@ -44,8 +49,8 @@
 		{
 			"checksumSHA1": "wn2shNJMwRZpvuvkf1s7h0wvqHI=",
 			"path": "github.com/gogo/protobuf/proto",
-			"revision": "2adc21fd136931e0388e278825291678e1d98309",
-			"revisionTime": "2017-08-31T18:35:40Z"
+			"revision": "41168f6614b7bb144818ec8967b8c702705df564",
+			"revisionTime": "2017-12-04T08:42:57Z"
 		},
 		{
 			"checksumSHA1": "HmbftipkadrLlCfzzVQ+iFHbl6g=",

@@ -95,7 +95,23 @@ func (config *Config) GetInt64(path string, defaultval int64) int64 {
 		return defaultval
 	}
 
-	if val, ok := value.(int64); ok {
+	if val, ok := value.(float64); ok {
+		return int64(val)
+	}
+
+	return defaultval
+}
+
+// GetBool get config value as bool
+func (config *Config) GetBool(path string, defaultval bool) bool {
+
+	value, ok := config.tryGet(path)
+
+	if !ok {
+		return defaultval
+	}
+
+	if val, ok := value.(bool); ok {
 		return val
 	}
 
@@ -158,6 +174,11 @@ func LoadFromFile(filepath string) error {
 // Get global method, get config value from global config object
 func Get(path string) Value {
 	return config.Get(path)
+}
+
+// GetBool get config value as bool
+func GetBool(path string, defaultval bool) bool {
+	return config.GetBool(path, defaultval)
 }
 
 // Has global method, check if global config object has the config item
