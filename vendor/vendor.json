@@ -10,12 +10,6 @@
 			"revisionTime": "2017-11-26T15:05:34Z"
 		},
 		{
-			"checksumSHA1": "PF/IhtoBfLFTPaKnZZ77VT5mReo=",
-			"path": "github.com/aliyun/aliyun-log-go-sdk",
-			"revision": "9bbd4fe1fe0ba1e0a5362cec7a0323dcaf90e25f",
-			"revisionTime": "2017-12-08T02:57:38Z"
-		},
-		{
 			"checksumSHA1": "fJl61EA6M1x8NG1lRgNyxegdQls=",
 			"path": "github.com/aliyun/go-loghub",
 			"revision": "304238708e9530ad624028afe3343a2ac2c9c4c2",
@@ -33,6 +27,12 @@
 			"path": "github.com/davecgh/go-spew/spew",
 			"revision": "890a5c3458b43e6104ff5da8dfa139d013d77544",
 			"revisionTime": "2017-07-05T02:17:15Z"
+		},
+		{
+			"checksumSHA1": "KDfldpsD2gh6pQ2SdrpZlALUb1k=",
+			"path": "github.com/dynamicgo/aliyun-log-go-sdk",
+			"revision": "9bbd4fe1fe0ba1e0a5362cec7a0323dcaf90e25f",
+			"revisionTime": "2017-12-08T02:57:38Z"
 		},
 		{
 			"checksumSHA1": "FbcM2THHHwG+T4WbruyMPUdB1X8=",

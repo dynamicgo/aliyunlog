@@ -69,20 +69,20 @@ func (s *LogStore) PutLogs(lg *LogGroup) (err error) {
 	}
 
 	// Compresse body with lz4
-	out := make([]byte, lz4.CompressBound(body))
-	n, err := lz4.Compress(body, out)
-	if err != nil {
-		return NewClientError(err.Error())
-	}
+	// out := make([]byte, lz4.CompressBound(body))
+	// n, err := lz4.Compress(body, out)
+	// if err != nil {
+	// 	return NewClientError(err.Error())
+	// }
 
 	h := map[string]string{
-		"x-log-compresstype": "lz4",
-		"x-log-bodyrawsize":  fmt.Sprintf("%v", len(body)),
-		"Content-Type":       "application/x-protobuf",
+		// "x-log-compresstype": "lz4",
+		"x-log-bodyrawsize": fmt.Sprintf("%v", len(body)),
+		"Content-Type":      "application/x-protobuf",
 	}
 
 	uri := fmt.Sprintf("/logstores/%v", s.Name)
-	r, err := request(s.project, "POST", uri, h, out[:n])
+	r, err := request(s.project, "POST", uri, h, body)
 	if err != nil {
 		return NewClientError(err.Error())
 	}
@@ -287,9 +287,9 @@ func (s *LogStore) GetHistograms(topic string, from int64, to int64, queryExp st
 		return nil, err
 	}
 	getHistogramsResponse := GetHistogramsResponse{
-		Progress: r.Header[ProgressHeader][0],
-		Count:    count,
-		Histograms:     histograms,
+		Progress:   r.Header[ProgressHeader][0],
+		Count:      count,
+		Histograms: histograms,
 	}
 
 	return &getHistogramsResponse, nil
